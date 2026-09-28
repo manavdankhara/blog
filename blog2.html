@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechZone - Tech Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h1>TechZone</h1>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button id="darkModeBtn">🌙</button>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div>
+            <h2>Welcome to TechZone</h2>
+            <p>Explore the latest technology, AI, coding and gadgets.</p>
+            <a href="#blogs" class="hero-btn">Explore Blogs</a>
+        </div>
+    </section>
+
+    <section id="blogs" class="blogs-section">
+        <h2>Latest Tech Blogs</h2>
+
+        <input
+            type="text"
+            id="searchBox"
+            placeholder="Search blogs..."
+        >
+
+        <div class="blog-container" id="blogContainer">
+
+            <article class="blog-card">
+                <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80" alt="Artificial Intelligence">
+                <div class="blog-content">
+                    <span>Artificial Intelligence</span>
+                    <h3>What is Artificial Intelligence?</h3>
+                    <p>
+                        Artificial Intelligence allows computers to perform
+                        tasks that normally require human intelligence.
+                    </p>
+                    <button class="read-btn"
+                        onclick="readBlog('Artificial Intelligence')">
+                        Read More
+                    </button>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80" alt="Programming">
+                <div class="blog-content">
+                    <span>Programming</span>
+                    <h3>Why Learn Programming?</h3>
+                    <p>
+                        Programming helps us create websites, applications,
+                        games and many useful software systems.
+                    </p>
+                    <button class="read-btn"
+                        onclick="readBlog('Programming')">
+                        Read More
+                    </button>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80" alt="Web Development">
+                <div class="blog-content">
+                    <span>Web Development</span>
+                    <h3>Introduction to Web Development</h3>
+                    <p>
+                        Learn how HTML, CSS and JavaScript work together
+                        to create modern websites.
+                    </p>
+                    <button class="read-btn"
+                        onclick="readBlog('Web Development')">
+                        Read More
+                    </button>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80" alt="Cyber Security">
+                <div class="blog-content">
+                    <span>Cyber Security</span>
+                    <h3>Basics of Cyber Security</h3>
+                    <p>
+                        Cyber security protects computers, networks and
+                        data from unauthorized access and attacks.
+                    </p>
+                    <button class="read-btn"
+                        onclick="readBlog('Cyber Security')">
+                        Read More
+                    </button>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&w=800&q=80" alt="Cloud Computing">
+                <div class="blog-content">
+                    <span>Cloud Computing</span>
+                    <h3>What is Cloud Computing?</h3>
+                    <p>
+                        Cloud computing provides computing resources such
+                        as storage and servers over the internet.
+                    </p>
+                    <button class="read-btn"
+                        onclick="readBlog('Cloud Computing')">
+                        Read More
+                    </button>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="Future Technology">
+                <div class="blog-content">
+                    <span>Future Technology</span>
+                    <h3>Future of Technology</h3>
+                    <p>
+                        New technologies such as AI, robotics and cloud
+                        computing are changing the way we live and work.
+                    </p>
+                    <button class="read-btn"
+                        onclick="readBlog('Future Technology')">
+                        Read More
+                    </button>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About TechZone</h2>
+        <p>
+            TechZone is a simple technology blog created to share
+            information about artificial intelligence, programming,
+            web development, cyber security and modern technology.
+        </p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+
+        <form id="contactForm">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Your Name"
+                required
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Your Email"
+                required
+            >
+
+            <textarea
+                id="message"
+                placeholder="Your Message"
+                required
+            ></textarea>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2026 TechZone. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
